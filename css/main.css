@@ -1,0 +1,1360 @@
+@charset "UTF-8";
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  font-family: "微软雅黑"; }
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 198917 */
+  src: url("//at.alicdn.com/t/font_5vkhxc94y0ttke29.eot");
+  src: url("//at.alicdn.com/t/font_5vkhxc94y0ttke29.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_5vkhxc94y0ttke29.woff") format("woff"), url("//at.alicdn.com/t/font_5vkhxc94y0ttke29.ttf") format("truetype"), url("//at.alicdn.com/t/font_5vkhxc94y0ttke29.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+@font-face {
+  font-family: font2;
+  src: url("lib/Fontin_Sans_BI_45b.otf"); }
+header {
+  width: 100%;
+  height: 0.88rem;
+  background: #ff5a69; }
+  header #homeHeader {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    header #homeHeader li {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      header #homeHeader li:nth-child(1) {
+        width: 45%;
+        color: #fff; }
+        header #homeHeader li:nth-child(1) span {
+          font-family: font2;
+          font-size: 0.24rem; }
+          header #homeHeader li:nth-child(1) span:nth-child(1) {
+            font-size: 0.36rem;
+            text-indent: -0.4rem; }
+      header #homeHeader li:nth-child(2) {
+        width: 55%; }
+        header #homeHeader li:nth-child(2) div {
+          width: 2.8rem;
+          height: 0.5rem;
+          position: relative; }
+          header #homeHeader li:nth-child(2) div .search {
+            width: 100%;
+            height: 100%;
+            text-indent: 0.6rem;
+            line-height: 0.5rem;
+            color: #ccc;
+            background: #fff;
+            border-radius: 0.5rem; }
+          header #homeHeader li:nth-child(2) div i.iconfont {
+            position: absolute;
+            left: 0.2rem;
+            top: 0.1rem;
+            color: #ccc; }
+  header #searchHeader,
+  header #specialHeader,
+  header #themeHeader,
+  header #userHeader,
+  header #kindHeader,
+  header #userSetHeader,
+  header #loginHeader,
+  header #detailHeader,
+  header #specialHeader,
+  header #registerHeader {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.4rem;
+    color: #fff;
+    position: relative; }
+    header #searchHeader i.iconfont,
+    header #specialHeader i.iconfont,
+    header #themeHeader i.iconfont,
+    header #userHeader i.iconfont,
+    header #kindHeader i.iconfont,
+    header #userSetHeader i.iconfont,
+    header #loginHeader i.iconfont,
+    header #detailHeader i.iconfont,
+    header #specialHeader i.iconfont,
+    header #registerHeader i.iconfont {
+      position: absolute;
+      width: 1.2rem;
+      height: 0.6rem;
+      left: 0;
+      top: 0.15rem;
+      line-height: 0.6rem;
+      text-align: center; }
+  header #specialHeader {
+    font-size: 0.4rem; }
+    header #specialHeader .logo {
+      position: absolute;
+      top: 0;
+      left: -0.1rem; }
+      header #specialHeader .logo i {
+        font-size: 0.4rem; }
+    header #specialHeader .pic {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: -0.1rem; }
+      header #specialHeader .pic i {
+        font-size: 0.4rem; }
+    header #specialHeader .right {
+      position: absolute;
+      top: 0;
+      right: 0.4rem; }
+      header #specialHeader .right i {
+        width: 0; }
+  header #detailHeader li:nth-child(1) {
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center; }
+    header #detailHeader li:nth-child(1) i {
+      font-size: 0.4rem; }
+  header #detailHeader li:nth-child(2) {
+    flex: 1;
+    padding-left: 32%;
+    font-size: 0.32rem; }
+  header #userSetHeader li:nth-child(1) {
+    width: 1.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header #userSetHeader li:nth-child(1) i {
+      font-size: 0.4rem; }
+  header #userSetHeader li:nth-child(2) {
+    flex: 1;
+    text-indent: 25%; }
+  header #loginHeader li:nth-child(1), header #loginHeader li:nth-child(3) {
+    width: 1.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header #loginHeader li:nth-child(1) i, header #loginHeader li:nth-child(3) i {
+      font-size: 0.4rem; }
+  header #loginHeader li:nth-child(2) {
+    flex: 1;
+    text-align: center; }
+  header #loginHeader #register {
+    display: block;
+    width: 1.2rem;
+    text-align: center;
+    margin-right: 0.2rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.1rem;
+    background: -webkit-radial-gradient(top, #ff9ead, #ff5a69); }
+  header #registerHeader li:nth-child(1), header #registerHeader li:nth-child(3) {
+    width: 1.2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header #registerHeader li:nth-child(1) i, header #registerHeader li:nth-child(3) i {
+      font-size: 0.4rem; }
+  header #registerHeader li:nth-child(2) {
+    flex: 1;
+    text-align: center; }
+  header #registerHeader #login {
+    display: block;
+    width: 1.2rem;
+    text-align: center;
+    margin-right: 0.2rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.1rem;
+    background: -webkit-radial-gradient(top, #ff9ead, #ff5a69); }
+  header #cartHeader {
+    font-size: 0.4rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+    header #cartHeader li {
+      width: 20%;
+      text-align: center;
+      font-size: 0.4rem;
+      color: #fff; }
+      header #cartHeader li:nth-child(2) {
+        width: 60%; }
+      header #cartHeader li:nth-child(1) {
+        line-height: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.15rem; }
+      header #cartHeader li:nth-child(3) {
+        line-height: 0.6rem;
+        height: 0.6rem; }
+        header #cartHeader li:nth-child(3) .tobalance {
+          display: block;
+          background: -webkit-linear-gradient(top, #ffafbe, #ff5a69);
+          border-radius: 0.15rem;
+          height: 100%;
+          width: 100%; }
+  header #payHeader {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+    header #payHeader li {
+      width: 20%;
+      text-align: center;
+      font-size: 0.32rem;
+      color: #fff; }
+      header #payHeader li:nth-child(2) {
+        width: 60%; }
+      header #payHeader li:nth-child(1) {
+        line-height: 0.6rem;
+        height: 0.6rem;
+        background: -webkit-linear-gradient(top, #ffafbe, #ff5a69);
+        border-radius: 0.15rem; }
+      header #payHeader li:nth-child(3) {
+        line-height: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.15rem; }
+  header #balanceHeader {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+    header #balanceHeader li {
+      width: 20%;
+      text-align: center;
+      font-size: 0.32rem;
+      color: #fff; }
+      header #balanceHeader li:nth-child(2) {
+        width: 60%; }
+      header #balanceHeader li:nth-child(1) {
+        line-height: 0.6rem;
+        height: 0.6rem;
+        background: -webkit-linear-gradient(top, #ffafbe, #ff5a69);
+        border-radius: 0.15rem; }
+      header #balanceHeader li:nth-child(3) {
+        line-height: 0.6rem;
+        height: 0.6rem;
+        border-radius: 0.15rem; }
+        header #balanceHeader li:nth-child(3) .topay {
+          display: block;
+          background: -webkit-linear-gradient(top, #ffafbe, #ff5a69);
+          border-radius: 0.15rem;
+          height: 100%;
+          width: 100%; }
+
+#mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  display: none; }
+  #mask img {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+#toast {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 1.5rem;
+  margin: auto;
+  width: 4rem;
+  height: 0.8rem;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  color: #fff;
+  border-radius: 0.2rem;
+  display: none;
+  z-index: 9999; }
+
+section {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+  overflow-x: hidden;
+  position: relative; }
+  section #homeContent {
+    width: 100%;
+    height: 100%; }
+    section #homeContent .swiper-container {
+      width: 100%;
+      height: 2.8rem; }
+      section #homeContent .swiper-container #wrapper {
+        width: 100%;
+        height: 100%; }
+    section #homeContent .homeKind {
+      width: 100%;
+      height: 2.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0.2rem 0; }
+      section #homeContent .homeKind li {
+        width: 20%;
+        height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section #homeContent .homeKind li i.iconfont {
+          display: flex;
+          padding: 10%;
+          text-align: center;
+          background: #efefef;
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 50%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10%;
+          margin-bottom: 10%;
+          color: #007AFF;
+          font-size: 0.46rem; }
+        section #homeContent .homeKind li i.color1 {
+          color: #f99fad; }
+        section #homeContent .homeKind li i.color2 {
+          color: #8cdc73; }
+        section #homeContent .homeKind li i.color3 {
+          color: #fa9963; }
+        section #homeContent .homeKind li i.color4 {
+          color: #ea79ae; }
+        section #homeContent .homeKind li i.color5 {
+          color: #a5a2b0; }
+        section #homeContent .homeKind li i.color6 {
+          color: #b24f5f; }
+        section #homeContent .homeKind li i.color7 {
+          color: #78ac68; }
+        section #homeContent .homeKind li i.color8 {
+          color: #949c3d; }
+        section #homeContent .homeKind li i.color9 {
+          color: #bde2f3; }
+        section #homeContent .homeKind li span {
+          color: #444;
+          font-size: 0.24rem;
+          height: 25%; }
+    section #homeContent .homeItem {
+      margin-top: 0.5rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      section #homeContent .homeItem li {
+        width: 3rem;
+        height: 4rem;
+        margin: 0.07rem;
+        border: 0.01px solid #DCDCDC;
+        background-color: #fff;
+        position: relative; }
+        section #homeContent .homeItem li .itemImg {
+          margin: 0.1rem; }
+          section #homeContent .homeItem li .itemImg img {
+            width: 2.8rem;
+            height: 2.8rem; }
+        section #homeContent .homeItem li .itemInfo {
+          flex: 1;
+          margin-top: 0.14rem;
+          position: relative;
+          margin-right: 0.2rem; }
+          section #homeContent .homeItem li .itemInfo p:nth-child(1) {
+            margin-left: 0.2rem;
+            font-size: 0.28rem;
+            line-height: 0.34rem; }
+            section #homeContent .homeItem li .itemInfo p:nth-child(1) span {
+              color: #ff5a69;
+              font-size: 0.24rem; }
+            section #homeContent .homeItem li .itemInfo p:nth-child(1) del {
+              color: #999;
+              margin-left: 0.2rem;
+              font-size: 0.18rem; }
+          section #homeContent .homeItem li .itemInfo p:nth-child(2) {
+            margin-top: -0.1rem;
+            position: absolute;
+            top: 0.1rem;
+            right: -0.05rem;
+            width: 0.7rem;
+            height: 0.29rem;
+            background: #ff5a69;
+            color: #fff;
+            text-align: center;
+            line-height: 0.29rem; }
+          section #homeContent .homeItem li .itemInfo p:nth-child(3) {
+            margin-left: 0.2rem;
+            margin-top: 0.08rem;
+            color: #333; }
+  section #searchContent {
+    width: 100%; }
+    section #searchContent div {
+      width: 5rem;
+      height: 0.6rem;
+      position: relative; }
+      section #searchContent div input {
+        position: absolute;
+        top: 0.3rem;
+        border: 1px solid #656565;
+        width: 100%;
+        height: 100%;
+        text-indent: 0.6rem;
+        background: #fff;
+        border-radius: 0.5rem;
+        outline: none;
+        margin-left: 0.5rem; }
+      section #searchContent div i {
+        margin-left: 0.5rem; }
+        section #searchContent div i.iconfont {
+          position: absolute;
+          left: 0.2rem;
+          top: 0.45rem;
+          color: #ccc; }
+  section #kindContent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    section #kindContent li {
+      width: 3rem;
+      height: 4rem;
+      margin: 0.07rem;
+      border: 0.01px solid #DCDCDC;
+      background-color: #fff;
+      position: relative; }
+      section #kindContent li .itemImg {
+        margin: 0.1rem; }
+        section #kindContent li .itemImg img {
+          width: 2.8rem;
+          height: 2.8rem; }
+      section #kindContent li .itemInfo {
+        flex: 1;
+        margin-top: 0.14rem;
+        position: relative;
+        margin-right: 0.2rem; }
+        section #kindContent li .itemInfo p:nth-child(1) {
+          margin-left: 0.2rem;
+          font-size: 0.28rem;
+          line-height: 0.34rem; }
+          section #kindContent li .itemInfo p:nth-child(1) span {
+            color: #ff5a69;
+            font-size: 0.24rem; }
+          section #kindContent li .itemInfo p:nth-child(1) del {
+            color: #999;
+            margin-left: 0.2rem;
+            font-size: 0.18rem; }
+        section #kindContent li .itemInfo p:nth-child(2) {
+          margin-top: -0.1rem;
+          position: absolute;
+          top: 0.08rem;
+          right: -0.05rem;
+          width: 0.7rem;
+          height: 0.29rem;
+          background: #ff5a69;
+          text-align: center;
+          line-height: 0.29rem;
+          color: #fff; }
+        section #kindContent li .itemInfo p:nth-child(3) {
+          margin-left: 0.2rem;
+          margin-top: 0.08rem;
+          color: #333; }
+  section #specialContent {
+    width: 100%; }
+    section #specialContent #specialList {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0.05rem; }
+      section #specialContent #specialList .specialItem {
+        width: 3rem;
+        height: 4rem;
+        margin: 0.07rem;
+        border: 0.01px solid #DCDCDC;
+        background-color: #fff;
+        position: relative; }
+        section #specialContent #specialList .specialItem .itemImg {
+          margin: 0.1rem; }
+          section #specialContent #specialList .specialItem .itemImg img {
+            width: 2.8rem;
+            height: 2.8rem; }
+        section #specialContent #specialList .specialItem .itemInfo {
+          flex: 1;
+          margin-top: 0.14rem;
+          position: relative;
+          margin-right: 0.2rem; }
+          section #specialContent #specialList .specialItem .itemInfo p:nth-child(1) {
+            margin-left: 0.2rem;
+            font-size: 0.15rem;
+            line-height: 0.34rem;
+            height: 0.4rem;
+            width: 2.5rem; }
+          section #specialContent #specialList .specialItem .itemInfo p:nth-child(3) {
+            margin-top: -0.1rem;
+            position: absolute;
+            top: 0.45rem;
+            right: 0;
+            width: 0.7rem;
+            height: 0.29rem;
+            line-height: 0.29rem;
+            background: #ff5a69;
+            text-align: center;
+            line-height: 0.29rem;
+            color: #fff; }
+          section #specialContent #specialList .specialItem .itemInfo p:nth-child(2) {
+            margin-left: 0.2rem;
+            margin-top: 0.08rem;
+            color: #ff5a69; }
+            section #specialContent #specialList .specialItem .itemInfo p:nth-child(2) span {
+              color: #ff5a69;
+              font-size: 0.24rem; }
+            section #specialContent #specialList .specialItem .itemInfo p:nth-child(2) del {
+              color: #999;
+              margin-left: 0.1rem;
+              font-size: 0.18rem; }
+    section #specialContent #specialList-two {
+      display: none;
+      width: 100%;
+      height: 100%; }
+      section #specialContent #specialList-two .specialItem-two {
+        width: 100%;
+        height: 2rem;
+        background-color: #fff;
+        display: flex;
+        position: relative; }
+        section #specialContent #specialList-two .specialItem-two:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #DCDCDC;
+          transform-origin: 0 0;
+          transform: scaleY(0.5); }
+        section #specialContent #specialList-two .specialItem-two .itemImg-two {
+          width: 1.8rem;
+          height: 1.8rem;
+          margin: 0.1rem; }
+          section #specialContent #specialList-two .specialItem-two .itemImg-two img {
+            width: 100%;
+            height: 100%; }
+        section #specialContent #specialList-two .specialItem-two .itemInfo-two {
+          flex: 1;
+          margin-top: 0.14rem;
+          position: relative;
+          margin-left: 0.2rem; }
+          section #specialContent #specialList-two .specialItem-two .itemInfo-two P {
+            width: 100%; }
+            section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(1) {
+              margin-top: 0.08rem;
+              color: #333;
+              font-size: 0.3rem; }
+            section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(2) {
+              margin-top: 0.2rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center; }
+              section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(2) span {
+                color: #ff5a69;
+                font-size: 0.36rem;
+                height: 0.6rem;
+                line-height: 0.8rem; }
+              section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(2) del {
+                color: #999;
+                opacity: 0.5;
+                margin-top: 0.1rem;
+                font-size: 0.26rem;
+                line-height: 0.3rem; }
+            section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(3) {
+              margin-top: -0.1rem;
+              position: absolute;
+              bottom: 0.3rem;
+              right: 0.6rem;
+              width: 1rem;
+              height: 1rem;
+              line-height: 1rem;
+              font-size: 0.3rem;
+              color: #fff;
+              font-weight: bold;
+              background: #ff5a69;
+              text-align: center;
+              border-radius: 50%; }
+              section #specialContent #specialList-two .specialItem-two .itemInfo-two P:nth-child(3) span {
+                font-size: 0.1rem;
+                font-weight: 100; }
+  section #detailContent {
+    background: #f9f5f4;
+    width: 100%;
+    height: 100%; }
+    section #detailContent #detailSwiper {
+      width: 100%;
+      height: 100%; }
+      section #detailContent #detailSwiper #proSwiper {
+        width: 100%;
+        height: 3rem; }
+        section #detailContent #detailSwiper #proSwiper #proWrapper {
+          margin-top: 5%;
+          width: 100%;
+          height: 100%; }
+          section #detailContent #detailSwiper #proSwiper #proWrapper img {
+            width: 70%;
+            margin: 0 auto; }
+      section #detailContent #detailSwiper .introduce {
+        overflow: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        width: 100%; }
+        section #detailContent #detailSwiper .introduce p {
+          width: 80%;
+          margin-left: 10%; }
+          section #detailContent #detailSwiper .introduce p:nth-child(1) {
+            height: 0.8rem;
+            line-height: 0.8rem;
+            color: #ff5a69;
+            font-size: 0.36rem;
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal !important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical; }
+          section #detailContent #detailSwiper .introduce p:nth-child(2) {
+            height: 0.8rem;
+            line-height: 0.8rem;
+            font-size: 0.28rem; }
+            section #detailContent #detailSwiper .introduce p:nth-child(2) span {
+              margin-left: 0.5rem; }
+          section #detailContent #detailSwiper .introduce p:nth-child(3) {
+            overflow: hidden;
+            flex-wrap: wrap;
+            margin-top: 0.2rem; }
+            section #detailContent #detailSwiper .introduce p:nth-child(3) span.change {
+              border: 1px solid #ff5a69; }
+            section #detailContent #detailSwiper .introduce p:nth-child(3) i {
+              margin-right: 0.2rem;
+              font-style: normal;
+              font-size: 0.28rem; }
+            section #detailContent #detailSwiper .introduce p:nth-child(3) span {
+              padding: 0 0.1rem;
+              margin: 0.1rem;
+              display: inline-block;
+              height: 0.6rem;
+              border: 1px solid #ccc;
+              font-size: 0.24rem;
+              text-align: center;
+              line-height: 0.6rem; }
+              section #detailContent #detailSwiper .introduce p:nth-child(3) span i {
+                font-style: normal; }
+              section #detailContent #detailSwiper .introduce p:nth-child(3) span img {
+                margin: 0.1rem;
+                border: 0;
+                width: 0.4rem;
+                height: 0.4rem;
+                display: inline-block;
+                vertical-align: middle; }
+          section #detailContent #detailSwiper .introduce p:nth-child(4) {
+            height: 0.8rem;
+            color: #FFFFFF;
+            margin-top: 1rem;
+            border-radius: 0.1rem;
+            box-shadow: -1px 1px 1px #ccc;
+            display: flex;
+            background: #ff5a69; }
+            section #detailContent #detailSwiper .introduce p:nth-child(4) span {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              font-style: normal;
+              font-size: 0.28rem; }
+              section #detailContent #detailSwiper .introduce p:nth-child(4) span i {
+                line-height: 0.28rem;
+                font-style: normal;
+                font-size: 0.20rem; }
+            section #detailContent #detailSwiper .introduce p:nth-child(4) .save {
+              flex: 1;
+              background: #fff;
+              color: #666;
+              border-right: 1px solid #ccc;
+              border-top-left-radius: 1px; }
+            section #detailContent #detailSwiper .introduce p:nth-child(4) .cart {
+              color: #666;
+              background: #fff;
+              flex: 1; }
+            section #detailContent #detailSwiper .introduce p:nth-child(4) .addcart {
+              flex: 3; }
+      section #detailContent #detailSwiper .xq {
+        margin-top: 0.5rem; }
+        section #detailContent #detailSwiper .xq p {
+          width: 80%;
+          margin: 0 auto;
+          line-height: 0.4rem; }
+          section #detailContent #detailSwiper .xq p span:nth-child(1) {
+            margin-right: 0.2rem;
+            color: #999; }
+      section #detailContent #detailSwiper .shipai {
+        margin-top: 0.5rem; }
+        section #detailContent #detailSwiper .shipai h4 {
+          width: 80%;
+          margin: 0 10%;
+          font-weight: normal;
+          line-height: 0.40rem; }
+        section #detailContent #detailSwiper .shipai p {
+          width: 80%;
+          margin: 0 10%;
+          color: #999;
+          line-height: 0.34rem; }
+  section #cartContent {
+    width: 100%;
+    background: #fff; }
+    section #cartContent #cartList {
+      width: 100%; }
+      section #cartContent #cartList .goto {
+        font-size: 0.36rem;
+        margin: 2rem auto;
+        width: 100%;
+        height: 2rem;
+        line-height: 0.6rem;
+        text-align: center; }
+      section #cartContent #cartList .cartItem {
+        width: 96%;
+        display: flex;
+        padding: 0 2% 0.2rem;
+        position: relative; }
+        section #cartContent #cartList .cartItem:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #DCDCDC;
+          transform-origin: 0 0;
+          transform: scaleY(0.5); }
+        section #cartContent #cartList .cartItem .cartItemImg {
+          width: 1.8rem;
+          margin: 0.1rem; }
+          section #cartContent #cartList .cartItem .cartItemImg img {
+            margin-top: 0.1rem;
+            width: 100%;
+            height: 100%; }
+        section #cartContent #cartList .cartItem .cartItemBox {
+          flex: 1;
+          margin-right: 0.1rem; }
+          section #cartContent #cartList .cartItem .cartItemBox .cartName {
+            width: 100%;
+            height: 0.7rem;
+            display: flex;
+            font-size: 0.32rem;
+            color: #000;
+            font-weight: 600; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartName h3 {
+              color: #222;
+              margin-top: 0.1rem;
+              width: 3rem;
+              margin-right: 0.25rem;
+              display: -webkit-box;
+              overflow: hidden;
+              line-height: 0.6rem;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartName span {
+              color: red;
+              margin-top: 0.2rem;
+              width: 1.5rem;
+              text-align: center; }
+          section #cartContent #cartList .cartItem .cartItemBox .cartMessage {
+            width: 96%;
+            height: 0.4rem;
+            display: flex; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartMessage span {
+              font-size: 0.26rem;
+              color: #999; }
+              section #cartContent #cartList .cartItem .cartItemBox .cartMessage span:nth-child(1) {
+                flex: 1;
+                line-height: 0.4rem; }
+              section #cartContent #cartList .cartItem .cartItemBox .cartMessage span:nth-child(2) {
+                flex: 3;
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 0.4rem;
+                white-space: normal !important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartMessage del {
+              flex: 1;
+              font-size: 0.26rem;
+              color: #999; }
+          section #cartContent #cartList .cartItem .cartItemBox .cartAmend {
+            width: 100%;
+            display: flex; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartAmend span:nth-child(1) {
+              width: 0.6rem;
+              height: 0.6rem;
+              font-size: 0.25rem;
+              line-height: 0.6rem;
+              text-align: center;
+              background: #ccc;
+              color: #fd6e74; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartAmend span:nth-child(2) {
+              width: 0.65rem;
+              height: 0.6rem;
+              font-size: 0.25rem;
+              font-weight: 700;
+              line-height: 0.6rem;
+              text-align: center;
+              color: #4a4a4a; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartAmend span:nth-child(3) {
+              width: 0.6rem;
+              height: 0.6rem;
+              font-size: 0.25rem;
+              line-height: 0.6rem;
+              text-align: center;
+              background: #ccc;
+              color: #fd6e74;
+              margin-right: 1.9rem; }
+            section #cartContent #cartList .cartItem .cartItemBox .cartAmend span:nth-child(4) {
+              line-height: 0.6rem;
+              font-size: 0.4rem !important;
+              text-align: center;
+              font-size: 0.6rem;
+              color: #756d6a;
+              width: 0.6rem;
+              height: 0.6rem; }
+  section #payContent {
+    width: 100%;
+    background: #fff; }
+    section #payContent #payList {
+      width: 100%; }
+      section #payContent #payList .payItem {
+        width: 96%;
+        display: flex;
+        padding: 0 2% 0.2rem;
+        position: relative; }
+        section #payContent #payList .payItem:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #DCDCDC;
+          transform-origin: 0 0;
+          transform: scaleY(0.5); }
+        section #payContent #payList .payItem .payItemImg {
+          width: 1.8rem;
+          margin: 0.1rem; }
+          section #payContent #payList .payItem .payItemImg img {
+            margin-top: 0.1rem;
+            width: 100%;
+            height: 100%; }
+        section #payContent #payList .payItem .payItemBox {
+          flex: 1;
+          margin-right: 0.1rem; }
+          section #payContent #payList .payItem .payItemBox .payName {
+            width: 100%;
+            height: 0.7rem;
+            display: flex;
+            font-size: 0.32rem;
+            color: #000;
+            font-weight: 600; }
+            section #payContent #payList .payItem .payItemBox .payName h3 {
+              color: #222;
+              margin-top: 0.1rem;
+              width: 3rem;
+              margin-right: 0.25rem;
+              display: -webkit-box;
+              overflow: hidden;
+              line-height: 0.6rem;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical; }
+            section #payContent #payList .payItem .payItemBox .payName span {
+              color: red;
+              margin-top: 0.2rem;
+              width: 1.5rem;
+              text-align: center; }
+          section #payContent #payList .payItem .payItemBox .payMessage {
+            width: 100%;
+            height: 0.4rem;
+            display: flex; }
+            section #payContent #payList .payItem .payItemBox .payMessage span {
+              font-size: 0.26rem;
+              color: #999; }
+              section #payContent #payList .payItem .payItemBox .payMessage span:nth-child(1) {
+                flex: 1;
+                line-height: 0.4rem;
+                text-align: center; }
+              section #payContent #payList .payItem .payItemBox .payMessage span:nth-child(2) {
+                flex: 3;
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 0.4rem;
+                white-space: normal !important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical; }
+            section #payContent #payList .payItem .payItemBox .payMessage del {
+              flex: 1;
+              font-size: 0.26rem;
+              color: #999;
+              margin-right: 0.15rem; }
+  section #balanceContent {
+    width: 100%;
+    background: #fff; }
+    section #balanceContent #balanceList {
+      width: 100%; }
+      section #balanceContent #balanceList .balanceItem {
+        width: 96%;
+        display: flex;
+        padding: 0 2% 0.2rem;
+        position: relative; }
+        section #balanceContent #balanceList .balanceItem:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #DCDCDC;
+          transform-origin: 0 0;
+          transform: scaleY(0.5); }
+        section #balanceContent #balanceList .balanceItem .balanceItemImg {
+          width: 1.8rem;
+          margin: 0.1rem; }
+          section #balanceContent #balanceList .balanceItem .balanceItemImg img {
+            margin-top: 0.1rem;
+            width: 100%;
+            height: 100%; }
+        section #balanceContent #balanceList .balanceItem .balanceItemBox {
+          flex: 1;
+          margin-right: 0.1rem; }
+          section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceName {
+            width: 100%;
+            height: 0.7rem;
+            display: flex;
+            font-size: 0.32rem;
+            color: #000;
+            font-weight: 600; }
+            section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceName h3 {
+              color: #222;
+              margin-top: 0.1rem;
+              width: 3rem;
+              margin-right: 0.25rem;
+              display: -webkit-box;
+              overflow: hidden;
+              line-height: 0.6rem;
+              white-space: normal !important;
+              text-overflow: ellipsis;
+              word-wrap: break-word;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical; }
+            section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceName span {
+              color: red;
+              margin-top: 0.2rem;
+              width: 1.5rem;
+              text-align: center; }
+          section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceMessage {
+            width: 100%;
+            height: 0.4rem;
+            display: flex; }
+            section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceMessage span {
+              font-size: 0.26rem;
+              color: #999; }
+              section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceMessage span:nth-child(1) {
+                flex: 1;
+                line-height: 0.4rem; }
+              section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceMessage span:nth-child(2) {
+                flex: 3;
+                display: -webkit-box;
+                overflow: hidden;
+                line-height: 0.4rem;
+                white-space: normal !important;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical; }
+            section #balanceContent #balanceList .balanceItem .balanceItemBox .balanceMessage del {
+              flex: 1;
+              font-size: 0.26rem;
+              color: #999; }
+    section #balanceContent .total {
+      margin-top: 0.3rem;
+      float: right;
+      margin-right: 0.3rem; }
+      section #balanceContent .total p:nth-child(1) {
+        width: 100%;
+        font-size: 0.3rem;
+        color: #000; }
+        section #balanceContent .total p:nth-child(1) span {
+          font-size: 0.4rem;
+          color: #ff5a69; }
+      section #balanceContent .total p:nth-child(2) {
+        width: 100%;
+        font-size: 0.3rem;
+        color: #000; }
+        section #balanceContent .total p:nth-child(2) span {
+          font-size: 0.4rem;
+          color: #ff5a69; }
+  section #themeContent {
+    width: 100%;
+    height: 100%; }
+    section #themeContent .specialItem-two {
+      width: 100%;
+      height: 2rem;
+      background-color: #fff;
+      display: flex;
+      color: #333;
+      position: relative; }
+      section #themeContent .specialItem-two:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #DCDCDC;
+        transform-origin: 0 0;
+        transform: scaleY(0.5); }
+      section #themeContent .specialItem-two .itemImg-two {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0.1rem; }
+        section #themeContent .specialItem-two .itemImg-two img {
+          width: 100%;
+          height: 100%; }
+      section #themeContent .specialItem-two .itemInfo-two {
+        flex: 1;
+        margin-top: 0.14rem;
+        position: relative;
+        margin-right: 0.2rem; }
+        section #themeContent .specialItem-two .itemInfo-two P {
+          margin-left: 0.3rem;
+          width: 100%; }
+          section #themeContent .specialItem-two .itemInfo-two P:nth-child(1) {
+            margin-top: 0.1rem;
+            font-size: 0.3rem; }
+          section #themeContent .specialItem-two .itemInfo-two P:nth-child(2) {
+            margin-top: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            section #themeContent .specialItem-two .itemInfo-two P:nth-child(2) span {
+              color: forestgreen;
+              font-size: 0.36rem;
+              height: 0.6rem;
+              line-height: 0.6rem; }
+            section #themeContent .specialItem-two .itemInfo-two P:nth-child(2) del {
+              color: #999;
+              margin-top: 0.15rem;
+              font-size: 0.26rem;
+              line-height: 0.3rem; }
+          section #themeContent .specialItem-two .itemInfo-two P:nth-child(3) {
+            margin-top: -0.1rem;
+            position: absolute;
+            bottom: 0.25rem;
+            right: 0;
+            width: 2rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            font-size: 0.3rem;
+            color: #fff;
+            background: forestgreen;
+            border-radius: 0.15rem;
+            text-indent: 0.2rem; }
+  section #userContent {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #F9F5F4; }
+    section #userContent .userInfo {
+      width: 100%;
+      height: 2.2rem;
+      display: flex;
+      background: -webkit-radial-gradient(top, #ce8c8e, #9c9fb5); }
+      section #userContent .userInfo .userImg {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 0.3rem;
+        background: #ff5a69;
+        text-align: center;
+        line-height: 1.4rem; }
+        section #userContent .userInfo .userImg .big {
+          font-size: 1.2rem;
+          color: white; }
+      section #userContent .userInfo .userOperation {
+        flex: 1;
+        margin-top: 0.4rem; }
+        section #userContent .userInfo .userOperation p {
+          width: 100%; }
+          section #userContent .userInfo .userOperation p:nth-child(1) {
+            font-size: 0.3rem;
+            font-weight: 600;
+            line-height: 0.36rem;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical; }
+          section #userContent .userInfo .userOperation p:nth-child(2) {
+            display: flex;
+            margin-top: 0.4rem; }
+            section #userContent .userInfo .userOperation p:nth-child(2) span {
+              flex: 1;
+              border-radius: 0.1rem;
+              display: block;
+              height: 0.6rem;
+              line-height: 0.6rem;
+              background: -webkit-radial-gradient(top, #ffafbe, #ff5a69);
+              margin-right: 0.4rem;
+              text-align: center;
+              font-size: 0.32rem;
+              color: white; }
+    section #userContent .userOperationList {
+      margin-bottom: 1rem;
+      width: 100%;
+      background: white; }
+      section #userContent .userOperationList li {
+        height: 1.2rem;
+        width: 100%;
+        display: flex; }
+        section #userContent .userOperationList li:nth-child(2) .userIcon {
+          background: #ffac5a; }
+        section #userContent .userOperationList li:nth-child(3) .userIcon {
+          background: #ff5a5a;
+          line-height: 0.8rem; }
+        section #userContent .userOperationList li:nth-child(4) .userIcon {
+          background: #ff5aa4;
+          line-height: 0.8rem; }
+        section #userContent .userOperationList li:nth-child(5) .userIcon {
+          background: #5abfff;
+          line-height: 0.7rem; }
+        section #userContent .userOperationList li .userIcon {
+          height: 0.8;
+          width: 0.8rem;
+          border-radius: 50%;
+          margin: 0.2rem;
+          text-align: center;
+          line-height: 0.7rem;
+          background: #ffd65a; }
+          section #userContent .userOperationList li .userIcon i {
+            font-size: 0.5rem;
+            color: white; }
+        section #userContent .userOperationList li .userOperationName {
+          flex: 1;
+          display: flex;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          margin-right: 0.2rem;
+          position: relative;
+          display: flex; }
+          section #userContent .userOperationList li .userOperationName:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #F5F5F5;
+            transform-origin: 0 0;
+            transform: scaleY(0.5); }
+          section #userContent .userOperationList li .userOperationName span {
+            flex: 1;
+            font-size: 0.34rem;
+            color: #9a9a9a; }
+          section #userContent .userOperationList li .userOperationName .userRight {
+            font-size: 0.6rem;
+            color: #ff5a69; }
+  section #loginContent,
+  section #registerContent {
+    width: 100%;
+    height: 100%;
+    background: #F9F5F4;
+    overflow: hidden; }
+    section #loginContent input,
+    section #registerContent input {
+      display: block;
+      width: 90%;
+      margin: 0.6rem auto 0;
+      outline: none;
+      height: 0.8rem;
+      font-size: 0.4rem;
+      text-indent: 0.4rem;
+      color: #666666;
+      border-radius: 0.2rem;
+      line-height: 0,8rem; }
+    section #loginContent .loginBtn,
+    section #loginContent .registerBtn,
+    section #registerContent .loginBtn,
+    section #registerContent .registerBtn {
+      margin: 0.6rem auto;
+      height: 0.8rem;
+      background: #ff5a69;
+      width: 90%;
+      text-align: center;
+      line-height: 0.8rem;
+      font-size: 0.42rem;
+      color: white;
+      border-radius: 0.2rem; }
+  section #userSetContent {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #f9f5f4;
+    overflow: hidden; }
+    section #userSetContent #out {
+      height: 1rem;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 0.6rem;
+      line-height: 1rem;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      color: white;
+      background: -webkit-radial-gradient(top, #ffafbe, #ff6b7a); }
+    section #userSetContent ul {
+      height: auto;
+      width: 90%;
+      margin: 0.5rem auto;
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      background: white; }
+      section #userSetContent ul li {
+        display: flex;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        position: relative; }
+        section #userSetContent ul li:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background-color: #F5F5F5;
+          transform-origin: 0 0;
+          transform: scaleY(0.5); }
+        section #userSetContent ul li span {
+          flex: 1;
+          font-size: 0.4rem;
+          color: #333333;
+          text-indent: 0.4rem; }
+        section #userSetContent ul li .userRight {
+          font-size: 0.6rem;
+          color: #afafaf; }
+        section #userSetContent ul li:last-child span {
+          display: flex; }
+          section #userSetContent ul li:last-child span i {
+            flex: 1;
+            font-style: normal; }
+          section #userSetContent ul li:last-child span b {
+            width: 2rem; }
+
+footer {
+  width: 100%;
+  height: 0.98rem;
+  position: relative; }
+  footer:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.02rem;
+    top: 0;
+    left: 0;
+    background-color: #DCDCDC;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+    box-shadow: 1px 1px #444;
+    opacity: 0.4; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer ul li {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #333;
+      font-size: 0.24rem; }
+      footer ul li i.iconfont {
+        flex: 1;
+        font-size: 0.32rem; }
+      footer ul li span {
+        flex: 1;
+        margin-top: 0.1rem; }
+      footer ul li.active {
+        color: #ff5a69; }
+  footer #detailFooter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 0.26rem; }
+    footer #detailFooter li {
+      flex: 1; }
+
+/*# sourceMappingURL=main.css.map */
